@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
+.firstpage {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+span {
+  margin-left: 100%;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #fff;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+h1.lg-heading {
+  font-size: 6rem;
+  margin-top: 15vh;
+}
+
+h2.sm-heading {
+  padding: 20% 20% 20%;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  padding: 4rem;
+  margin-right: 50%;
+  min-height: calc(100vh - 60px);
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: justify;
+    margin-right: 0;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  main .sm-heading {
+    font-size: 20px;
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.about {
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1%;
+}
+
+.aboutbox {
+  width: 100%;
+}
+
+.aboutme {
+  width: 100%;
+}
+
+.aboutme h1 {
+  font-size: 35px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  padding: 20px 30px 10px;
+  line-height: 33px;
+}
+
+.aboutme p {
+  font-size: 12px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  padding: 0px 30px 5px;
+  line-height: 17px;
+  text-align: justify;
+}
+
+.img-me {
+  width: 100%;
+  height: 40vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutbox {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .aboutme h1 {
+    padding: 20px 0px 0px;
+  }
+
+  .aboutme p {
+    padding: 20px 0px 0px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  .img-me {
+    padding-top: 25 px;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutbox {
+    width: 90%;
+    height: 100vh;
+  }
+
+  .aboutme {
+    padding-top: 35px;
+    width: 45%;
+    float: left;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding-right: 3%;
+  }
+
+  .aboutme h1 {
+    padding: 30px 30px 0px 20px;
+  }
+
+  .aboutme p {
+    padding: 40px 30px 0px 15px;
+    text-align: justify;
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .img-me {
+    padding-top: 10px;
+    width: 50%;
+    float: right;
+    height: 90%;
+  }
+}
+
+.projects {
+  height: 100vh;
+  width: 100%;
+}
+
+.connect {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.connectin {
+  overflow: auto;
+  padding-bottom: 20vh;
+}
+
+.connectin h1 {
+  align-items: center;
+  text-align: center;
+  font-size: 70px;
+  font-family: "oswald";
+}
+
+.connectin article {
+  position: absolute;
+  top: 345%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.connectin article .connectme {
+  color: #000000;
+  font-size: 130%;
+
+  line-height: 50px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.connectin article a {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.connectin article a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul {
+  position: absolute;
+  top: 360%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #0077b5;
+}
+
+.foot {
+  background-color: black;
+  position: relative;
+  height: 20vh;
+  margin-top: -20vh;
+  clear: both;
+  font-style: normal;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 100%;
+  text-align: center;
+  color: lightgray;
+}
+
+hr {
+  height: 2px;
+  width: 100%;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
