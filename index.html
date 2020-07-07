@@ -28,6 +28,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="toggle" onclick="toggle()"></div>
     </header>
 
 
@@ -121,7 +122,12 @@
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+      function  toggle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+      }
     </script>
+
     <script>
       AOS.init({
         offset: 120,

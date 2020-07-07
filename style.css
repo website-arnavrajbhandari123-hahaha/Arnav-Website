@@ -244,6 +244,10 @@ a:hover {
   background-color: #0077b5;
 }
 
+.toggle {
+  display: none;
+}
+
 @media screen and (max-width: 1680px) {
   .banner {
     background-position: center;
@@ -269,23 +273,26 @@ a:hover {
     font-size: 14px;
   }
 
-  .written {
-    text-align: left;
-    justify-items: left;
-  }
   .written h3 {
     font-size: 35px;
   }
 
   .written p {
     font-size: 17px;
+    text-align: left;
   }
 }
 
 @media screen and (max-width: 736px) {
+  header {
+    display: none;
+  }
+  .logo {
+    font-size: 0;
+  }
   .header ul li a {
     font-weight: 300;
-    margin: 0 10px;
+    margin: 0px;
   }
   .banner {
     background-position: center;
@@ -302,17 +309,13 @@ a:hover {
     flex-direction: column;
   }
 
-  .written {
-    text-align: justify;
-    justify-items: justify;
-  }
-
   .written h3 {
     font-size: 30px;
   }
 
   .written p {
     font-size: 16px;
+    text-align: justify;
   }
 }
 
@@ -346,11 +349,6 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
-  .header ul li a {
-    font-weight: 250;
-    margin: 0 8px;
-  }
-
   .banner {
     background-position: center;
   }
