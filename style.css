@@ -119,13 +119,13 @@ header ul li a {
   align-items: center;
   flex-direction: row;
 }
-h3 {
+.written h3 {
   font-size: 40px;
   font-weight: 200;
   margin-bottom: 10px;
 }
 
-p {
+.written p {
   position: relative;
   font-size: 18px;
   font-weight: 300;
@@ -175,6 +175,7 @@ p {
   height: 3.75em;
   line-height: 3.75em;
   border-radius: 3.75em;
+
   padding: 0 2.5em;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -241,4 +242,134 @@ a:hover {
 }
 .social-menu ul li:nth-child(5) a:hover {
   background-color: #0077b5;
+}
+
+@media screen and (max-width: 1680px) {
+  .banner {
+    background-position: center;
+  }
+
+  .banner h2 {
+    font-size: 90px;
+  }
+  .banner h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .banner {
+    background-position: center;
+  }
+
+  .banner h2 {
+    font-size: 80px;
+  }
+  .banner h4 {
+    font-size: 14px;
+  }
+
+  .written {
+    text-align: left;
+    justify-items: left;
+  }
+  .written h3 {
+    font-size: 35px;
+  }
+
+  .written p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .header ul li a {
+    font-weight: 300;
+    margin: 0 10px;
+  }
+  .banner {
+    background-position: center;
+  }
+
+  .banner h2 {
+    font-size: 65px;
+  }
+  .banner h4 {
+    font-size: 12px;
+  }
+
+  .my-info {
+    flex-direction: column;
+  }
+
+  .written {
+    text-align: justify;
+    justify-items: justify;
+  }
+
+  .written h3 {
+    font-size: 30px;
+  }
+
+  .written p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header ul li a {
+    font-weight: 250;
+    margin: 0 10px;
+  }
+  .banner {
+    background-position: center;
+  }
+  .banner h2 {
+    font-size: 40px;
+  }
+
+  .banner h4 {
+    font-size: 10px;
+  }
+
+  .my-info {
+    flex-direction: column;
+  }
+
+  .written h3 {
+    font-size: 25px;
+  }
+
+  .written p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header ul li a {
+    font-weight: 250;
+    margin: 0 8px;
+  }
+
+  .banner {
+    background-position: center;
+  }
+  .banner h2 {
+    font-size: 35px;
+  }
+
+  .banner h4 {
+    font-size: 5px;
+  }
+  .my-info {
+    flex-direction: column;
+  }
+
+  .written h3 {
+    font-size: 20px;
+  }
+
+  .written p {
+    font-size: 12px;
+  }
 }
