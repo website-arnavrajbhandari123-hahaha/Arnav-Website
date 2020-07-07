@@ -16,7 +16,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 40px 100px;
   z-index: 1000;
   transition: 0.8s;
@@ -33,7 +32,7 @@ header {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.8s;
@@ -304,7 +303,9 @@ a:hover {
   .my-info {
     flex-direction: column;
   }
-
+  .written {
+    width: 100%;
+  }
   .written h3 {
     font-size: 30px;
   }
@@ -334,7 +335,10 @@ a:hover {
   .my-info {
     flex-direction: column;
   }
-
+  .written {
+    width: 100%;
+    max-width: 100%;
+  }
   .written h3 {
     font-size: 25px;
   }
